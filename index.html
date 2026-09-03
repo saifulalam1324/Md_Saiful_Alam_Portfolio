@@ -360,9 +360,9 @@ footer{ padding:34px 0; text-align:center; font-family:var(--mono); font-size:11
 <body>
 
 <div class="side-rail">
-  <a href="#" title="GitHub">⌘</a>
-  <a href="#" title="LinkedIn">in</a>
-  <a href="#" title="Twitter/X">𝕏</a>
+  <a href="https://github.com/saifulalam1324" target="_blank" title="GitHub">⌘</a>
+  <a href="https://www.linkedin.com/in/md-saiful-alam-a25235272/" target="_blank" title="LinkedIn">in</a>
+  <a href="https://twitter.com/saifulalam1324" target="_blank" title="Twitter/X">𝕏</a>
   <a href="#contact" title="Message">✉</a>
 </div>
 
@@ -401,20 +401,7 @@ footer{ padding:34px 0; text-align:center; font-family:var(--mono); font-size:11
 
     <div class="hero-photo-wrap">
       <div class="hero-photo">
-        <!-- EDIT: replace this placeholder div with:
-             <img src="your-photo.jpg" alt="Md Saiful Alam"> -->
-        <div class="placeholder">
-          <span class="big">SA</span>
-          <span>drop your photo here</span>
-        </div>
-      </div>
-      <div class="stat-chip top-right">
-        <div class="num">CSE</div>
-        <div class="lbl">STUDENT</div>
-      </div>
-      <div class="stat-chip bottom-left">
-        <div class="num">Git+</div>
-        <div class="lbl">PROJECTS</div>
+        <img src="image\pic_1.jpeg" alt="Md Saiful Alam">
       </div>
     </div>
   </div>
@@ -466,19 +453,14 @@ footer{ padding:34px 0; text-align:center; font-family:var(--mono); font-size:11
         <h3>Premier University, Chattogram</h3>
         <div class="edu-loc">📍 Chattogram, Bangladesh</div>
         <span class="edu-status">Currently Enrolled</span>
-        <div class="coursework">
-          <div class="lbl">KEY COURSEWORK</div>
-          <div class="course-tags">
-            <span>Data Structures</span><span>Algorithms</span><span>Database Systems</span>
-            <span>OOP</span><span>Software Engineering</span><span>Data Mining</span>
-            <span>Big Data Analytics</span>
-          </div>
-        </div>
       </div>
-      <div class="edu-stats">
-        <div class="edu-stat"><div class="n">CSE</div><div class="l">PROGRAM</div></div>
-        <div class="edu-stat"><div class="n">Active</div><div class="l">STATUS</div></div>
-        <div class="edu-stat"><div class="n">BD</div><div class="l">LOCATION</div></div>
+    </div>
+    <div class="edu-card">
+      <div>
+        <span class="edu-tag">B.Sc. COMPUTER SCIENCE & ENGINEERING</span>
+        <h3>Premier University, Chattogram</h3>
+        <div class="edu-loc">📍 Chattogram, Bangladesh</div>
+        <span class="edu-status">Currently Enrolled</span>
       </div>
     </div>
   </div>
@@ -531,10 +513,6 @@ footer{ padding:34px 0; text-align:center; font-family:var(--mono); font-size:11
     <div class="section-rule"></div>
     <div class="filter-row" id="filter-row"></div>
     <div class="proj-grid" id="proj-grid"></div>
-    <div class="proj-note">
-      Placeholder entries — edit the <code>PROJECTS</code> array in the <code>&lt;script&gt;</code>
-      at the bottom of this file with your real GitHub repos, descriptions, and links.
-    </div>
   </div>
 </section>
 
@@ -549,10 +527,6 @@ footer{ padding:34px 0; text-align:center; font-family:var(--mono); font-size:11
       <div class="item">🌐 <b>—</b> Events Attended</div>
     </div>
     <div class="ach-grid" id="ach-grid"></div>
-    <div class="proj-note">
-      Placeholder cards — edit the <code>ACHIEVEMENTS</code> array in the script with your real
-      awards, hackathons, and certifications.
-    </div>
   </div>
 </section>
 
@@ -569,9 +543,8 @@ footer{ padding:34px 0; text-align:center; font-family:var(--mono); font-size:11
         <div class="contact-list">
           <a href="mailto:mdsaifula18@gmail.com"><span class="ico">✉</span> mdsaifula18@gmail.com</a>
           <a href="tel:+8801625933020"><span class="ico">☎</span> +880 1625-933020</a>
-          <!-- EDIT: replace href="#" with your real profile URLs -->
-          <a href="https://www.youtube.com/watch?v=cqTeCXeZUz4" target="blank"><span class="ico">⌘</span> GitHub</a>
-          <a href="#"><span class="ico">in</span> LinkedIn</a>
+          <a href="https://github.com/saifulalam1324" target="blank"><span class="ico">⌘</span> GitHub</a>
+          <a href="https://www.linkedin.com/in/md-saiful-alam-a25235272/" target="blank"><span class="ico">in</span> LinkedIn</a>
         </div>
       </div>
       <div class="contact-form">
@@ -600,20 +573,22 @@ footer{ padding:34px 0; text-align:center; font-family:var(--mono); font-size:11
 
 <script>
 const PROJECTS = [
-  { title:"Project One", cat:"fullstack", catLabel:"FULL STACK", icon:"🧱", desc:"One-line description of what this project does and the problem it solves.", tech:["Laravel","MySQL"], github:"#", demo:"" },
-  { title:"Project Two", cat:"aiml", catLabel:"AI / ML", icon:"🧠", desc:"One-line description of what this project does and the problem it solves.", tech:["Python","Data Mining"], github:"#", demo:"" },
-  { title:"Project Three", cat:"fullstack", catLabel:"FULL STACK", icon:"⚙️", desc:"One-line description of what this project does and the problem it solves.", tech:["React","ASP.NET"], github:"#", demo:"" },
-  { title:"Project Four", cat:"uiux", catLabel:"UI / UX", icon:"🎨", desc:"One-line description of what this project does and the problem it solves.", tech:["Kotlin","Jetpack Compose"], github:"#", demo:"" },
-  { title:"Project Five", cat:"other", catLabel:"SYSTEMS", icon:"🔧", desc:"One-line description of what this project does and the problem it solves.", tech:["C++","Data Structures"], github:"#", demo:"" },
-  { title:"Project Six", cat:"aiml", catLabel:"AI / ML", icon:"📊", desc:"One-line description of what this project does and the problem it solves.", tech:["Python","Big Data"], github:"#", demo:"" }
+  { title:"E-Commerce Site", cat:"fullstack", catLabel:"FULL STACK", tech:["Laravel","MySQL"], github:"https://github.com/saifulalam1324/ECommerce_Site"},
+  { title:"Headline Classifier", cat:"aiml", catLabel:"AI / ML", tech:["Python","NLP"], github:"https://github.com/saifulalam1324/News_Headline_Classifier"},
+  { title:"Multi-Task Management System", cat:"fullstack", catLabel:"FULL STACK", tech:["Laravel","MySQL"], github:"https://github.com/saifulalam1324/multi_task_management"},
+  { title:"Restaurent App", cat:"androiedapp", catLabel:"ANDROIED APP", tech:["Kotlin","Jetpack Compose"], github:"https://github.com/saifulalam1324/Restaurant-App"},
+  { title:"LFR Car", cat:"iot", catLabel:"IOT", tech:["C","Arduino Uno","Sensors"], github:"#"},
+  { title:"Smart University Network Design", cat:"networking", catLabel:"NETWORKING", tech:["Cisco Packet Tracer"], github:"https://github.com/saifulalam1324/Smart-University-Network"},
+  { title:"Library Management system", cat:"fullstack", catLabel:"FULL STACK", tech:["Boots trap","MySQL"], github:"https://github.com/saifulalam1324/Library-Management-System"}
 ];
 
 const FILTERS = [
   { id:"all", label:"ALL" },
   { id:"fullstack", label:"FULL STACK" },
-  { id:"uiux", label:"UI / UX" },
+  { id:"androiedapp", label:"ANDROIED APP" },
   { id:"aiml", label:"AI / ML" },
-  { id:"other", label:"OTHER" }
+  { id:"iot", label:"IOT" },
+  { id:"networking", label:"NETWORKING" }
 ];
 
 let activeFilter = "all";
@@ -635,15 +610,12 @@ function renderProjects(){
   const list = activeFilter === 'all' ? PROJECTS : PROJECTS.filter(p=>p.cat===activeFilter);
   document.getElementById('proj-grid').innerHTML = list.map(p => `
     <div class="proj-card">
-      <div class="proj-thumb">${p.icon}</div>
       <div class="proj-body">
         <div class="proj-cat">${p.catLabel}</div>
         <h3>${p.title}</h3>
-        <p>${p.desc}</p>
         <div class="proj-tech">${p.tech.map(t=>`<span>${t}</span>`).join('')}</div>
         <div class="proj-links">
           ${p.github ? `<a href="${p.github}" target="_blank" rel="noopener">GitHub</a>` : ''}
-          ${p.demo ? `<a href="${p.demo}" target="_blank" rel="noopener">Live</a>` : ''}
         </div>
       </div>
     </div>
@@ -653,35 +625,35 @@ function renderProjects(){
 renderFilters();
 renderProjects();
 
-const ACHIEVEMENTS = [
-  { badge:"1ST PRIZE", icon:"🏆", date:"— 2026", title:"Hackathon / Competition Name", org:"Organizing Institution" },
-  { badge:"CERTIFICATE", icon:"📜", date:"— 2026", title:"Certification Name", org:"Issuing Platform" },
-  { badge:"EVENT", icon:"🌐", date:"— 2026", title:"Conference / Event Name", org:"Host Institution" }
-];
+// const ACHIEVEMENTS = [
+//   { badge:"1ST PRIZE", icon:"🏆", date:"— 2026", title:"Hackathon / Competition Name", org:"Organizing Institution" },
+//   { badge:"CERTIFICATE", icon:"📜", date:"— 2026", title:"Certification Name", org:"Issuing Platform" },
+//   { badge:"EVENT", icon:"🌐", date:"— 2026", title:"Conference / Event Name", org:"Host Institution" }
+// ];
 
-document.getElementById('ach-grid').innerHTML = ACHIEVEMENTS.map(a => `
-  <div class="ach-card">
-    <div class="ach-top">
-      <span class="ach-badge">${a.badge}</span>
-      <span class="ach-icon">${a.icon}</span>
-    </div>
-    <div class="ach-date">${a.date}</div>
-    <h4>${a.title}</h4>
-    <div class="org">${a.org}</div>
-  </div>
-`).join('');
+// document.getElementById('ach-grid').innerHTML = ACHIEVEMENTS.map(a => `
+//   <div class="ach-card">
+//     <div class="ach-top">
+//       <span class="ach-badge">${a.badge}</span>
+//       <span class="ach-icon">${a.icon}</span>
+//     </div>
+//     <div class="ach-date">${a.date}</div>
+//     <h4>${a.title}</h4>
+//     <div class="org">${a.org}</div>
+//   </div>
+// `).join('');
 
-function handleSubmit(e){
-  e.preventDefault();
-  const inputs = e.target.querySelectorAll('input, textarea');
-  const name = inputs[0].value;
-  const email = inputs[1].value;
-  const message = inputs[2].value;
-  const subject = encodeURIComponent(`Portfolio contact from ${name}`);
-  const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
-  window.location.href = `mailto:mdsaifula18@gmail.com?subject=${subject}&body=${body}`;
-  return false;
-}
+// function handleSubmit(e){
+//   e.preventDefault();
+//   const inputs = e.target.querySelectorAll('input, textarea');
+//   const name = inputs[0].value;
+//   const email = inputs[1].value;
+//   const message = inputs[2].value;
+//   const subject = encodeURIComponent(`Portfolio contact from ${name}`);
+//   const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
+//   window.location.href = `mailto:mdsaifula18@gmail.com?subject=${subject}&body=${body}`;
+//   return false;
+// }
 </script>
 </body>
 </html>
